@@ -81,7 +81,7 @@ body {
 
 header {
   min-height: 75vh;
-  background-image: url("/assets/header-bg.jpg");
+  background-image: url("assets/header-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,6 +150,9 @@ nav {
   font-family: var(--header-font);
   color: var(--white);
   text-align: center;
+  background: #2a1d1c87;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
 .header__container p {
