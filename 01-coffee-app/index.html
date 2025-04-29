@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
-    
+    <!-- HEADER -->
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#"><img src="/assets/logo.png" alt="logo" /></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+
+            </ul>
+
+        </nav>
+        <!-- Hero -->
+        <div class="section__container header__container" id="home">
+            <h1>Good Pastry & Coffee For a Good Day</h1>
+            <p>
+                Start your day on a delightful note with our freshly baked pastries
+                and premium coffee. At PastryWorld, we believe in crafting moments of
+                joy with every bite and sip.
+            </p>
+            <div class="header__btns">
+                <button class="btn">Let`s Eat</button>
+                <button class="btn">Book a table</button>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- MENU- section -->
+    <section class="menu" id="menu">
+        <div class="section__container menu__container">
+            <div class="section__header">Popular Menu</div>
+            <a href="#">View All
+                <i class="ri-arrow-right-line"></i>
+            </a>
+            <div class="menu__grid">
+                <div class="menu__card">
+                    <img src="/assets/menu-1.jpg" alt="menu" />
+
+                    <div class="menu__card__content">
+                        <h4>Caramel Pecan Cinnamon Roll</h4>
+                        <h3>$14.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="/assets/menu-2.jpg" alt="menu" />
+
+                    <div class="menu__card__content">
+                        <h4>Chocolate Croissant (Pain au Chocolat)</h4>
+                        <h3>$24.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="/assets/menu-3.jpg" alt="menu" />
+
+                    <div class="menu__card__content">
+                        <h4>Chocolate Fudge Delight</h4>
+                        <h3>$20.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="/assets/menu-4.jpg" alt="menu" />
+
+                    <div class="menu__card__content">
+                        <h4>Triple Layer Chocolate Mousse</h4>
+                        <h3>$29.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BOOK section -->
+    <section class="book">
+        <div class="section__container book__container">
+            <form action="/">
+                <h4>Book A Table</h4>
+                <div class="input__row">
+                    <div class="input__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__group">
+                        <label for="firstName">Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="input__row">
+                    <div class="input__group">
+                        <label for="firstName">Date</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__group">
+                        <label for="firstName">Person</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="input__row">
+                    <button class="btn">Book A Table</button>
+                </div>
+
+        </div>
+        </form>
+        </div>
+    </section>
+
+    <!-- ABOUT section -->
+    <section class="about">
+        
+    </section>
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
