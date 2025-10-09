@@ -196,8 +196,113 @@ nav {
 
 /* ==================== ABOUT SECTION==================== */
 
+.about__header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about__header .section__description{
+    max-width: 600px;
+}
+
+.about__btn {
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about__content{
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about__grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.about__image {
+    overflow: hidden;
+}
+
+.about__card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.about__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.about__card p {
+    color: var(--text-light);
+}
 
 
+/* ==================== PRODUCTS SECTION==================== */
+.product__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.product__card {
+    position: relative;
+    isolation: isolate;
+    padding: 2rem;
+}
+
+.product__card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-color: var(--extra-light);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.product__card:hover::before {
+    height: 100%;
+}
+
+.product__card h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.product__card p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.product__card img {
+    max-width: 275px;
+    margin-inline: auto;
+}
+
+
+/* ==================== PRODUCTS SECTION==================== */
 
 
 
@@ -206,6 +311,14 @@ nav {
 
 @media (width > 540px) {
     .deals__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -302,7 +415,25 @@ nav {
 
     }
 
+        /* ABOUTSsection- media */
+    .about__header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    .about__content {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .about__image {
+        grid-area: 1/2/2/3;
+    }
+
+    .product__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 
 
@@ -314,6 +445,10 @@ nav {
 
         .deals__card:nth-child(1) {
             grid-column: unset;
+        }
+
+        .about__grid {
+            gap: 4rem 2rem;
         }
     }
 
